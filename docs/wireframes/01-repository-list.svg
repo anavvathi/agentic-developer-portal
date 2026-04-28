@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <style>
+      .bg { fill: #060a14; }
+      .panel { fill: #0c1222; stroke: rgba(148,163,184,0.1); stroke-width: 1; }
+      .panel-elev { fill: #141c2e; stroke: rgba(148,163,184,0.1); stroke-width: 1; }
+      .text-h1 { fill: #f1f5f9; font: 700 32px Inter, sans-serif; }
+      .text-h2 { fill: #f1f5f9; font: 600 16px Inter, sans-serif; }
+      .text-body { fill: #94a3b8; font: 400 13px Inter, sans-serif; }
+      .text-mono { fill: #94a3b8; font: 500 11px 'JetBrains Mono', monospace; }
+      .text-accent { fill: #6366f1; font: 600 14px Inter, sans-serif; }
+      .accent { fill: #6366f1; }
+      .success { fill: #10b981; }
+      .warning { fill: #f59e0b; }
+      .pink { fill: #ec4899; }
+      .info { fill: #06b6d4; }
+      .stroke-muted { stroke: rgba(148,163,184,0.15); fill: none; }
+      .label { fill: #64748b; font: 500 11px Inter, sans-serif; letter-spacing: 0.5px; text-transform: uppercase; }
+    </style>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1440" height="900"/>
+  <rect x="0" y="0" width="1440" height="400" fill="url(#brandGrad)" opacity="0.04"/>
+
+  <!-- Header -->
+  <rect class="panel" x="0" y="0" width="1440" height="68"/>
+  <rect class="accent" x="48" y="20" width="32" height="32" rx="8"/>
+  <text class="text-h2" x="92" y="36">Agentic Portal</text>
+  <text class="text-body" x="92" y="54">AI-native developer platform</text>
+  <text class="text-body" x="280" y="42">Repositories</text>
+  <rect class="panel-elev" x="1180" y="22" width="180" height="28" rx="14"/>
+  <circle class="success" cx="1196" cy="36" r="4"/>
+  <text class="text-body" x="1206" y="40" style="font-size:11px">All systems operational</text>
+  <circle fill="url(#brandGrad)" cx="1392" cy="36" r="14"/>
+  <text x="1392" y="40" fill="white" text-anchor="middle" font="600 11px Inter">KK</text>
+
+  <!-- Title block -->
+  <text class="text-h1" x="48" y="140">Your <tspan fill="url(#brandGrad)">repositories</tspan></text>
+  <text class="text-body" x="48" y="168" style="font-size:14px">Browse, monitor, and dispatch AI agents across your codebase.</text>
+
+  <!-- Stats pills -->
+  <g transform="translate(1080,108)">
+    <rect class="panel-elev" x="0" y="0" width="100" height="60" rx="10"/>
+    <text class="text-h2" x="14" y="32" style="font-size:22px">8</text>
+    <text class="label" x="14" y="48">Repos</text>
+    <rect class="panel-elev" x="108" y="0" width="100" height="60" rx="10"/>
+    <text class="text-h2" x="122" y="32" style="font-size:22px">3,733</text>
+    <text class="label" x="122" y="48">Total stars</text>
+    <rect class="panel-elev" x="216" y="0" width="100" height="60" rx="10"/>
+    <text class="text-h2" x="230" y="32" style="font-size:22px">86</text>
+    <text class="label" x="230" y="48">Avg health</text>
+  </g>
+
+  <!-- Search bar -->
+  <rect class="panel-elev" x="48" y="200" width="1344" height="48" rx="10"/>
+  <circle class="stroke-muted" cx="76" cy="224" r="7" stroke-width="2"/>
+  <line class="stroke-muted" x1="82" y1="230" x2="88" y2="236" stroke-width="2"/>
+  <text class="text-body" x="100" y="228">Search repositories, topics, or descriptions…</text>
+
+  <!-- Filter chips -->
+  <g transform="translate(48,272)">
+    <rect class="accent" x="0" y="0" width="48" height="28" rx="14" opacity="0.25"/>
+    <rect x="0" y="0" width="48" height="28" rx="14" fill="none" stroke="#6366f1"/>
+    <text class="text-accent" x="24" y="18" text-anchor="middle">All</text>
+    <rect class="panel-elev" x="58" y="0" width="60" height="28" rx="14"/>
+    <text class="text-body" x="88" y="18" text-anchor="middle">Go</text>
+    <rect class="panel-elev" x="128" y="0" width="74" height="28" rx="14"/>
+    <text class="text-body" x="165" y="18" text-anchor="middle">Python</text>
+    <rect class="panel-elev" x="212" y="0" width="98" height="28" rx="14"/>
+    <text class="text-body" x="261" y="18" text-anchor="middle">TypeScript</text>
+    <rect class="panel-elev" x="320" y="0" width="62" height="28" rx="14"/>
+    <text class="text-body" x="351" y="18" text-anchor="middle">Rust</text>
+    <rect class="panel-elev" x="392" y="0" width="58" height="28" rx="14"/>
+    <text class="text-body" x="421" y="18" text-anchor="middle">Dart</text>
+  </g>
+
+  <text class="text-body" x="1200" y="290">Sort by</text>
+  <rect class="panel-elev" x="1248" y="272" width="144" height="28" rx="6"/>
+  <text class="text-body" x="1260" y="290">Recently updated ▾</text>
+
+  <!-- Repo card grid (2 rows × 3) -->
+  <g transform="translate(48,328)">
+    <!-- Card 1 -->
+    <g>
+      <rect class="panel" width="436" height="244" rx="16"/>
+      <text class="text-h2" x="20" y="36">agentic-api-gateway</text>
+      <rect class="warning" x="20" y="46" width="62" height="18" rx="9" opacity="0.2"/>
+      <text x="51" y="60" fill="#f59e0b" font="600 10px Inter" text-anchor="middle">INTERNAL</text>
+      <circle cx="392" cy="44" r="22" fill="none" stroke="#10b981" stroke-width="3"/>
+      <text x="392" y="48" fill="#f1f5f9" font="700 12px Inter" text-anchor="middle">92</text>
+      <text class="text-body" x="20" y="92" style="font-size:13px">High-performance API gateway with</text>
+      <text class="text-body" x="20" y="110" style="font-size:13px">intelligent routing and rate limiting…</text>
+      <rect x="20" y="130" width="396" height="6" rx="3" fill="#1a2440"/>
+      <rect x="20" y="130" width="309" height="6" rx="3" fill="#00ADD8"/>
+      <rect x="329" y="130" width="40" height="6" fill="#89e051"/>
+      <rect x="369" y="130" width="28" height="6" fill="#384d54"/>
+      <rect x="397" y="130" width="19" height="6" rx="3" fill="#cb171e"/>
+      <g transform="translate(20,156)" font="500 12px Inter, sans-serif" fill="#94a3b8">
+        <circle cx="6" cy="6" r="5" fill="#00ADD8"/>
+        <text x="18" y="10">Go</text>
+        <text x="80" y="10">★ 342</text>
+        <text x="140" y="10">⇄ 4</text>
+        <text x="190" y="10">⊙ 12</text>
+      </g>
+      <line x1="20" y1="200" x2="416" y2="200" stroke="rgba(148,163,184,0.1)"/>
+      <rect x="20" y="210" width="120" height="22" rx="11" fill="rgba(16,185,129,0.12)"/>
+      <circle cx="32" cy="221" r="3" fill="#10b981"/>
+      <text x="42" y="225" fill="#10b981" font="500 11px Inter">success · production</text>
+      <text class="text-mono" x="416" y="225" text-anchor="end">Updated 2 hours ago</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(454,0)">
+      <rect class="panel" width="436" height="244" rx="16"/>
+      <text class="text-h2" x="20" y="36">ml-pipeline-orchestrator</text>
+      <rect class="pink" x="20" y="46" width="58" height="18" rx="9" opacity="0.2"/>
+      <text x="49" y="60" fill="#ef4444" font="600 10px Inter" text-anchor="middle">PRIVATE</text>
+      <circle cx="392" cy="44" r="22" fill="none" stroke="#06b6d4" stroke-width="3"/>
+      <text x="392" y="48" fill="#f1f5f9" font="700 12px Inter" text-anchor="middle">87</text>
+      <text class="text-body" x="20" y="92" style="font-size:13px">End-to-end ML pipeline orchestration</text>
+      <text class="text-body" x="20" y="110" style="font-size:13px">with feature engineering and training…</text>
+      <rect x="20" y="130" width="396" height="6" rx="3" fill="#1a2440"/>
+      <rect x="20" y="130" width="337" height="6" rx="3" fill="#3572A5"/>
+      <g transform="translate(20,156)" font="500 12px Inter, sans-serif" fill="#94a3b8">
+        <circle cx="6" cy="6" r="5" fill="#3572A5"/>
+        <text x="18" y="10">Python</text>
+        <text x="100" y="10">★ 528</text>
+        <text x="160" y="10">⇄ 7</text>
+        <text x="210" y="10">⊙ 23</text>
+      </g>
+      <line x1="20" y1="200" x2="416" y2="200" stroke="rgba(148,163,184,0.1)"/>
+      <rect x="20" y="210" width="100" height="22" rx="11" fill="rgba(16,185,129,0.12)"/>
+      <circle cx="32" cy="221" r="3" fill="#10b981"/>
+      <text x="42" y="225" fill="#10b981" font="500 11px Inter">success · staging</text>
+      <text class="text-mono" x="416" y="225" text-anchor="end">Updated 30 min ago</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(908,0)">
+      <rect class="panel" width="436" height="244" rx="16"/>
+      <text class="text-h2" x="20" y="36">developer-portal-ui</text>
+      <rect class="success" x="20" y="46" width="56" height="18" rx="9" opacity="0.2"/>
+      <text x="48" y="60" fill="#10b981" font="600 10px Inter" text-anchor="middle">PUBLIC</text>
+      <circle cx="392" cy="44" r="22" fill="none" stroke="#10b981" stroke-width="3"/>
+      <text x="392" y="48" fill="#f1f5f9" font="700 12px Inter" text-anchor="middle">96</text>
+      <text class="text-body" x="20" y="92" style="font-size:13px">AI-native developer portal frontend</text>
+      <text class="text-body" x="20" y="110" style="font-size:13px">with real-time agent monitoring…</text>
+      <rect x="20" y="130" width="396" height="6" rx="3" fill="#1a2440"/>
+      <rect x="20" y="130" width="285" height="6" rx="3" fill="#3178c6"/>
+      <rect x="305" y="130" width="60" height="6" fill="#563d7c"/>
+      <rect x="365" y="130" width="32" height="6" fill="#e34c26"/>
+      <rect x="397" y="130" width="19" height="6" rx="3" fill="#f1e05a"/>
+      <g transform="translate(20,156)" font="500 12px Inter, sans-serif" fill="#94a3b8">
+        <circle cx="6" cy="6" r="5" fill="#3178c6"/>
+        <text x="18" y="10">TypeScript</text>
+        <text x="120" y="10">★ 1.2k</text>
+        <text x="180" y="10">⇄ 3</text>
+        <text x="220" y="10">⊙ 8</text>
+      </g>
+      <line x1="20" y1="200" x2="416" y2="200" stroke="rgba(148,163,184,0.1)"/>
+      <rect x="20" y="210" width="120" height="22" rx="11" fill="rgba(16,185,129,0.12)"/>
+      <circle cx="32" cy="221" r="3" fill="#10b981"/>
+      <text x="42" y="225" fill="#10b981" font="500 11px Inter">success · production</text>
+      <text class="text-mono" x="416" y="225" text-anchor="end">Updated 15 min ago</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0,260)">
+      <rect class="panel" width="436" height="244" rx="16"/>
+      <text class="text-h2" x="20" y="36">infra-terraform-modules</text>
+      <text class="text-body" x="20" y="92" style="font-size:13px">Reusable Terraform modules across</text>
+      <text class="text-body" x="20" y="110" style="font-size:13px">AWS, GCP, and Azure providers…</text>
+    </g>
+    <g transform="translate(454,260)">
+      <rect class="panel" width="436" height="244" rx="16"/>
+      <text class="text-h2" x="20" y="36">auth-service</text>
+      <text class="text-body" x="20" y="92" style="font-size:13px">Zero-trust authentication with</text>
+      <text class="text-body" x="20" y="110" style="font-size:13px">OAuth2 and passkey support in Rust…</text>
+    </g>
+    <g transform="translate(908,260)">
+      <rect class="panel" width="436" height="244" rx="16"/>
+      <text class="text-h2" x="20" y="36">data-lake-ingestion</text>
+      <text class="text-body" x="20" y="92" style="font-size:13px">Scalable batch and streaming data</text>
+      <text class="text-body" x="20" y="110" style="font-size:13px">ingestion into the unified data lake…</text>
+    </g>
+  </g>
+
+  <!-- Annotation -->
+  <text class="text-body" x="48" y="876" style="font-size:11px;font-style:italic">Wireframe 1 of 4 — Repository List · Search-first surface that reduces 8+ repos to a scannable card grid with at-a-glance health and deploy status.</text>
+</svg>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <style>
+      .bg { fill: #060a14; }
+      .panel { fill: #0c1222; stroke: rgba(148,163,184,0.1); stroke-width: 1; }
+      .panel-elev { fill: #141c2e; stroke: rgba(148,163,184,0.1); stroke-width: 1; }
+      .text-h1 { fill: #f1f5f9; font: 700 28px Inter, sans-serif; }
+      .text-h2 { fill: #f1f5f9; font: 600 14px Inter, sans-serif; }
+      .text-body { fill: #94a3b8; font: 400 13px Inter, sans-serif; }
+      .text-mono { fill: #a5b4fc; font: 500 12px 'JetBrains Mono', monospace; }
+      .label { fill: #64748b; font: 600 11px Inter, sans-serif; letter-spacing: 0.5px; text-transform: uppercase; }
+      .accent { fill: #6366f1; }
+      .success { fill: #10b981; }
+    </style>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="bg" width="1440" height="900"/>
+
+  <!-- Header -->
+  <rect class="panel" x="0" y="0" width="1440" height="68"/>
+  <rect class="accent" x="48" y="20" width="32" height="32" rx="8"/>
+  <text class="text-h2" x="92" y="36" style="font-size:15px">Agentic Portal</text>
+  <text class="text-body" x="92" y="54" style="font-size:11px">AI-native developer platform</text>
+  <text class="text-body" x="280" y="42">Repositories</text>
+  <text fill="#64748b" x="365" y="42">/</text>
+  <text fill="#f1f5f9" font="500 13px Inter" x="378" y="42">developer-portal-ui</text>
+
+  <!-- Header banner -->
+  <rect class="panel" x="48" y="100" width="1344" height="172" rx="16"/>
+  <text class="text-h1" x="72" y="148">developer-portal-ui</text>
+  <rect class="success" x="332" y="124" width="58" height="22" rx="11" opacity="0.2"/>
+  <text x="361" y="140" fill="#10b981" font="600 10px Inter" text-anchor="middle">PUBLIC</text>
+  <text class="text-body" x="72" y="178" style="font-size:14px">AI-native developer portal frontend with real-time agent monitoring and repository management.</text>
+
+  <!-- Topic chips -->
+  <g transform="translate(72,200)">
+    <rect class="panel-elev" width="58" height="22" rx="11"/>
+    <text x="29" y="16" fill="#a5b4fc" font="500 11px Inter" text-anchor="middle">#react</text>
+    <rect class="panel-elev" x="68" width="84" height="22" rx="11"/>
+    <text x="110" y="16" fill="#a5b4fc" font="500 11px Inter" text-anchor="middle">#typescript</text>
+    <rect class="panel-elev" x="162" width="120" height="22" rx="11"/>
+    <text x="222" y="16" fill="#a5b4fc" font="500 11px Inter" text-anchor="middle">#developer-tools</text>
+    <rect class="panel-elev" x="292" width="34" height="22" rx="11"/>
+    <text x="309" y="16" fill="#a5b4fc" font="500 11px Inter" text-anchor="middle">#ai</text>
+  </g>
+
+  <!-- Clone URL -->
+  <rect fill="#060a14" stroke="rgba(148,163,184,0.1)" x="72" y="234" width="380" height="30" rx="8"/>
+  <text class="text-mono" x="84" y="254">git@github.com:acme/developer-portal-ui.git</text>
+  <rect class="panel-elev" x="460" y="234" width="60" height="30" rx="8"/>
+  <text x="490" y="254" fill="#f1f5f9" font="500 12px Inter" text-anchor="middle">Copy</text>
+
+  <!-- CTA: Run Agent Task -->
+  <rect fill="url(#ctaGrad)" x="1196" y="124" width="172" height="44" rx="10"/>
+  <text x="1282" y="151" fill="white" font="600 15px Inter" text-anchor="middle">✨ Run Agent Task</text>
+  <text class="text-body" x="1368" y="178" text-anchor="end" style="font-size:11px">Dispatch an AI agent</text>
+  <text class="text-body" x="1368" y="194" text-anchor="end" style="font-size:11px">on this repository</text>
+
+  <!-- BENTO GRID -->
+  <!-- Languages -->
+  <g transform="translate(48,300)">
+    <rect class="panel" width="660" height="240" rx="16"/>
+    <text class="label" x="24" y="32">LANGUAGES</text>
+    <rect x="24" y="56" width="612" height="12" rx="6" fill="#1a2440"/>
+    <rect x="24" y="56" width="441" height="12" rx="6" fill="#3178c6"/>
+    <rect x="465" y="56" width="92" height="12" fill="#563d7c"/>
+    <rect x="557" y="56" width="49" height="12" fill="#e34c26"/>
+    <rect x="606" y="56" width="30" height="12" rx="6" fill="#f1e05a"/>
+    <g transform="translate(24,96)" font="500 13px Inter">
+      <rect x="0" y="0" width="10" height="10" rx="3" fill="#3178c6"/>
+      <text x="20" y="10" fill="#f1f5f9">TypeScript</text>
+      <text x="280" y="10" fill="#64748b" font="500 12px 'JetBrains Mono'">72%</text>
+      <rect x="320" y="0" width="10" height="10" rx="3" fill="#563d7c"/>
+      <text x="340" y="10" fill="#f1f5f9">CSS</text>
+      <text x="600" y="10" fill="#64748b" font="500 12px 'JetBrains Mono'">15%</text>
+      <rect x="0" y="32" width="10" height="10" rx="3" fill="#e34c26"/>
+      <text x="20" y="42" fill="#f1f5f9">HTML</text>
+      <text x="280" y="42" fill="#64748b" font="500 12px 'JetBrains Mono'">8%</text>
+      <rect x="320" y="32" width="10" height="10" rx="3" fill="#f1e05a"/>
+      <text x="340" y="42" fill="#f1f5f9">JavaScript</text>
+      <text x="600" y="42" fill="#64748b" font="500 12px 'JetBrains Mono'">5%</text>
+    </g>
+  </g>
+
+  <!-- Commit Activity -->
+  <g transform="translate(720,300)">
+    <rect class="panel" width="660" height="240" rx="16"/>
+    <text class="label" x="24" y="32">COMMIT ACTIVITY</text>
+    <text class="text-body" x="636" y="32" text-anchor="end" style="font-size:11px">626 commits · 12 weeks</text>
+    <g transform="translate(24,72)">
+      <rect x="0"   y="100" width="44" height="60" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="52"  y="80"  width="44" height="80" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="104" y="56"  width="44" height="104" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="156" y="76"  width="44" height="84" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="208" y="44"  width="44" height="116" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="260" y="28"  width="44" height="132" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="312" y="14"  width="44" height="146" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="364" y="36"  width="44" height="124" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="416" y="0"   width="44" height="160" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="468" y="6"   width="44" height="154" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="520" y="-12" width="44" height="172" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+      <rect x="572" y="-30" width="44" height="190" fill="url(#brandGrad)" rx="4" opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- Health Score -->
+  <g transform="translate(48,560)">
+    <rect class="panel" width="430" height="280" rx="16"/>
+    <text class="label" x="24" y="32">HEALTH SCORE</text>
+    <circle cx="215" cy="148" r="60" fill="none" stroke="rgba(148,163,184,0.12)" stroke-width="10"/>
+    <circle cx="215" cy="148" r="60" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round"
+            stroke-dasharray="361 377" transform="rotate(-90 215 148)"/>
+    <text x="215" y="156" fill="#f1f5f9" font="700 36px Inter" text-anchor="middle">96</text>
+    <text x="215" y="178" fill="#64748b" font="500 13px Inter" text-anchor="middle">/ 100</text>
+    <text x="215" y="246" fill="#94a3b8" font="500 13px Inter" text-anchor="middle">Excellent — keep it up.</text>
+  </g>
+
+  <!-- Counts -->
+  <g transform="translate(490,560)">
+    <rect class="panel" width="660" height="135" rx="16"/>
+    <g transform="translate(40,68)" fill="#a5b4fc" font="500 22px Inter">
+      <rect class="panel-elev" x="-32" y="-26" width="40" height="40" rx="8"/>
+      <text x="-12" y="-2" text-anchor="middle" fill="#a5b4fc">⇄</text>
+      <text x="32" y="0" fill="#f1f5f9" font="700 22px Inter">3</text>
+      <text x="32" y="22" class="label" fill="#64748b">Open PRs</text>
+    </g>
+    <line x1="160" y1="36" x2="160" y2="100" stroke="rgba(148,163,184,0.1)"/>
+    <g transform="translate(200,68)" fill="#a5b4fc" font="500 22px Inter">
+      <rect class="panel-elev" x="-32" y="-26" width="40" height="40" rx="8"/>
+      <text x="-12" y="-2" text-anchor="middle" fill="#a5b4fc">⊙</text>
+      <text x="32" y="0" fill="#f1f5f9" font="700 22px Inter">8</text>
+      <text x="32" y="22" class="label" fill="#64748b">Open issues</text>
+    </g>
+    <line x1="320" y1="36" x2="320" y2="100" stroke="rgba(148,163,184,0.1)"/>
+    <g transform="translate(360,68)" fill="#a5b4fc" font="500 22px Inter">
+      <rect class="panel-elev" x="-32" y="-26" width="40" height="40" rx="8"/>
+      <text x="-12" y="-2" text-anchor="middle" fill="#a5b4fc">★</text>
+      <text x="32" y="0" fill="#f1f5f9" font="700 22px Inter">1,205</text>
+      <text x="32" y="22" class="label" fill="#64748b">Stars</text>
+    </g>
+    <line x1="510" y1="36" x2="510" y2="100" stroke="rgba(148,163,184,0.1)"/>
+    <g transform="translate(550,68)" fill="#a5b4fc" font="500 22px Inter">
+      <rect class="panel-elev" x="-32" y="-26" width="40" height="40" rx="8"/>
+      <text x="-12" y="-2" text-anchor="middle" fill="#a5b4fc">⑂</text>
+      <text x="32" y="0" fill="#f1f5f9" font="700 22px Inter">187</text>
+      <text x="32" y="22" class="label" fill="#64748b">Forks</text>
+    </g>
+  </g>
+
+  <!-- Contributors -->
+  <g transform="translate(490,710)">
+    <rect class="panel" width="660" height="130" rx="16"/>
+    <text class="label" x="24" y="32">CONTRIBUTORS</text>
+    <text class="text-body" x="636" y="32" text-anchor="end" style="font-size:11px">5 active</text>
+    <g transform="translate(24,52)">
+      <circle cx="18" cy="18" r="18" fill="url(#brandGrad)" stroke="#0c1222" stroke-width="2"/>
+      <text x="18" y="22" fill="white" font="600 12px Inter" text-anchor="middle">EW</text>
+      <circle cx="46" cy="18" r="18" fill="#ec4899" stroke="#0c1222" stroke-width="2"/>
+      <text x="46" y="22" fill="white" font="600 12px Inter" text-anchor="middle">NG</text>
+      <circle cx="74" cy="18" r="18" fill="#06b6d4" stroke="#0c1222" stroke-width="2"/>
+      <text x="74" y="22" fill="white" font="600 12px Inter" text-anchor="middle">ZA</text>
+      <circle cx="102" cy="18" r="18" fill="url(#brandGrad)" stroke="#0c1222" stroke-width="2"/>
+      <text x="102" y="22" fill="white" font="600 12px Inter" text-anchor="middle">DK</text>
+      <circle cx="130" cy="18" r="18" fill="#10b981" stroke="#0c1222" stroke-width="2"/>
+      <text x="130" y="22" fill="white" font="600 12px Inter" text-anchor="middle">CP</text>
+    </g>
+    <g transform="translate(24,100)" font="500 13px Inter">
+      <text fill="#f1f5f9">Emma Wilson</text>
+      <text x="600" fill="#64748b" font="500 12px 'JetBrains Mono'">445 commits</text>
+    </g>
+  </g>
+
+  <!-- Last Deploy -->
+  <g transform="translate(1162,560)">
+    <rect class="panel" width="218" height="280" rx="16"/>
+    <text class="label" x="24" y="32">LAST DEPLOY</text>
+    <rect x="20" y="60" width="178" height="84" rx="10" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)"/>
+    <circle cx="48" cy="102" r="20" fill="#10b981"/>
+    <text x="48" y="108" fill="white" font="700 18px Inter" text-anchor="middle">✓</text>
+    <text x="80" y="100" fill="#f1f5f9" font="700 16px Inter">Success</text>
+    <text x="80" y="120" fill="#94a3b8" font="500 12px Inter">production · 45m ago</text>
+  </g>
+
+  <text class="text-body" x="48" y="876" style="font-size:11px;font-style:italic">Wireframe 2 of 4 — Repository Overview · Bento grid surfaces health, languages, activity, contributors, and deploy status; primary CTA dispatches the agent.</text>
+</svg>

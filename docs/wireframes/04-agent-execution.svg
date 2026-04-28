@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <style>
+      .bg { fill: #060a14; }
+      .panel { fill: #0c1222; stroke: rgba(148,163,184,0.1); stroke-width: 1; }
+      .panel-deep { fill: #0c1222; stroke: rgba(148,163,184,0.1); stroke-width: 1; }
+      .panel-elev { fill: #141c2e; stroke: rgba(148,163,184,0.1); stroke-width: 1; }
+      .text-h2 { fill: #f1f5f9; font: 700 22px Inter, sans-serif; }
+      .text-body { fill: #94a3b8; font: 400 13px Inter, sans-serif; }
+      .text-mono { fill: #94a3b8; font: 500 12px 'JetBrains Mono', monospace; }
+      .text-mono-light { fill: #f1f5f9; font: 500 12px 'JetBrains Mono', monospace; }
+      .label { fill: #64748b; font: 600 11px Inter, sans-serif; letter-spacing: 0.5px; }
+      .ts { fill: #64748b; font: 500 11px 'JetBrains Mono', monospace; }
+      .accent { fill: #6366f1; }
+      .ghost { fill: #94a3b8; font: 500 13px Inter; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1440" height="900"/>
+
+  <!-- Header -->
+  <rect class="panel" x="0" y="0" width="1440" height="68"/>
+  <rect class="accent" x="48" y="20" width="32" height="32" rx="8"/>
+  <text fill="#f1f5f9" font="700 15px Inter" x="92" y="36">Agentic Portal</text>
+  <text class="text-body" x="92" y="54" style="font-size:11px">AI-native developer platform</text>
+  <text class="text-body" x="280" y="42">Repositories</text>
+  <text fill="#64748b" x="365" y="42">/</text>
+  <text fill="#94a3b8" font="500 13px Inter" x="378" y="42">developer-portal-ui</text>
+  <text fill="#64748b" x="510" y="42">/</text>
+  <text fill="#f1f5f9" font="500 13px Inter" x="522" y="42">Agent Execution</text>
+
+  <text class="ghost" x="48" y="106">← Back to developer-portal-ui</text>
+
+  <!-- Execution header -->
+  <rect class="panel" x="48" y="124" width="1344" height="100" rx="16"/>
+  <rect x="72" y="148" width="56" height="56" rx="10" fill="#f59e0b" opacity="0.7"/>
+  <text x="100" y="188" font="28px sans-serif" text-anchor="middle">🛡️</text>
+  <text class="text-h2" x="148" y="170">Security Scan</text>
+  <text class="text-body" x="148" y="194">on <tspan fill="#f1f5f9" font="600 13px Inter">developer-portal-ui</tspan> · 2-4 min</text>
+
+  <!-- Status badge -->
+  <rect x="1024" y="160" width="118" height="32" rx="16" fill="rgba(99,102,241,0.25)" stroke="#6366f1"/>
+  <circle cx="1042" cy="176" r="5" fill="#6366f1"/>
+  <text x="1056" y="180" fill="#6366f1" font="700 11px Inter" letter-spacing="0.5px">◐ RUNNING</text>
+
+  <rect class="panel-elev" x="1156" y="160" width="80" height="32" rx="10"/>
+  <text x="1196" y="180" fill="#f1f5f9" font="500 13px Inter" text-anchor="middle">Details</text>
+  <text class="ghost" x="1252" y="180">Switch task</text>
+
+  <!-- Logs panel (left, large) -->
+  <rect class="panel-deep" x="48" y="244" width="900" height="612" rx="16"/>
+  <!-- Log header -->
+  <rect fill="#141c2e" x="48" y="244" width="900" height="48" rx="16"/>
+  <rect fill="#141c2e" x="48" y="276" width="900" height="16"/>
+  <text class="label" x="72" y="274">LIVE LOGS</text>
+  <rect x="780" y="258" width="74" height="20" rx="10" fill="rgba(239,68,68,0.12)"/>
+  <circle cx="794" cy="268" r="3" fill="#ef4444"/>
+  <text x="804" y="272" fill="#ef4444" font="700 10px Inter">STREAMING</text>
+  <text class="text-mono" x="924" y="272" text-anchor="end">14 entries</text>
+  <line x1="48" y1="292" x2="948" y2="292" stroke="rgba(148,163,184,0.1)"/>
+
+  <!-- Log lines -->
+  <g transform="translate(72,322)" font="500 12.5px 'JetBrains Mono', monospace">
+    <text class="ts" x="0" y="0">22:14:03</text>
+    <rect x="80" y="-11" width="40" height="14" rx="3" fill="rgba(99,102,241,0.15)"/>
+    <text x="100" y="0" fill="#6366f1" font="700 10px Inter" text-anchor="middle">INFO</text>
+    <text x="132" y="0" fill="#f1f5f9">Initializing security scanner agent...</text>
+
+    <text class="ts" x="0" y="28">22:14:03</text>
+    <rect x="80" y="17" width="40" height="14" rx="3" fill="rgba(99,102,241,0.15)"/>
+    <text x="100" y="28" fill="#6366f1" font="700 10px Inter" text-anchor="middle">INFO</text>
+    <text x="132" y="28" fill="#f1f5f9">Loading vulnerability databases (NVD, GHSA, OSV)...</text>
+
+    <text class="ts" x="0" y="56">22:14:04</text>
+    <rect x="80" y="45" width="40" height="14" rx="3" fill="rgba(148,163,184,0.1)"/>
+    <text x="100" y="56" fill="#94a3b8" font="700 10px Inter" text-anchor="middle">DEBUG</text>
+    <text x="132" y="56" fill="#94a3b8">Database version: 2026.04.28</text>
+
+    <text class="ts" x="0" y="84">22:14:04</text>
+    <rect x="80" y="73" width="40" height="14" rx="3" fill="rgba(99,102,241,0.15)"/>
+    <text x="100" y="84" fill="#6366f1" font="700 10px Inter" text-anchor="middle">INFO</text>
+    <text x="132" y="84" fill="#f1f5f9">Phase 1: Dependency vulnerability scan...</text>
+
+    <text class="ts" x="0" y="112">22:14:05</text>
+    <rect x="80" y="101" width="40" height="14" rx="3" fill="rgba(148,163,184,0.1)"/>
+    <text x="100" y="112" fill="#94a3b8" font="700 10px Inter" text-anchor="middle">DEBUG</text>
+    <text x="132" y="112" fill="#94a3b8">Scanning 145 direct dependencies...</text>
+
+    <text class="ts" x="0" y="140">22:14:06</text>
+    <rect x="80" y="129" width="40" height="14" rx="3" fill="rgba(245,158,11,0.15)"/>
+    <text x="100" y="140" fill="#f59e0b" font="700 10px Inter" text-anchor="middle">WARN</text>
+    <text x="132" y="140" fill="#f59e0b">CVE-2026-1234: lodash@4.17.20 — Prototype pollution (Medium)</text>
+
+    <text class="ts" x="0" y="168">22:14:07</text>
+    <rect x="80" y="157" width="40" height="14" rx="3" fill="rgba(245,158,11,0.15)"/>
+    <text x="100" y="168" fill="#f59e0b" font="700 10px Inter" text-anchor="middle">WARN</text>
+    <text x="132" y="168" fill="#f59e0b">CVE-2026-5678: axios@0.27.2 — SSRF vulnerability (High)</text>
+
+    <text class="ts" x="0" y="196">22:14:08</text>
+    <rect x="80" y="185" width="40" height="14" rx="3" fill="rgba(99,102,241,0.15)"/>
+    <text x="100" y="196" fill="#6366f1" font="700 10px Inter" text-anchor="middle">INFO</text>
+    <text x="132" y="196" fill="#f1f5f9">Phase 2: Static code analysis...</text>
+
+    <text class="ts" x="0" y="224">22:14:08</text>
+    <rect x="80" y="213" width="40" height="14" rx="3" fill="rgba(148,163,184,0.1)"/>
+    <text x="100" y="224" fill="#94a3b8" font="700 10px Inter" text-anchor="middle">DEBUG</text>
+    <text x="132" y="224" fill="#94a3b8">Analyzing 847 files for security patterns...</text>
+
+    <text class="ts" x="0" y="252">22:14:09</text>
+    <rect x="80" y="241" width="40" height="14" rx="3" fill="rgba(245,158,11,0.15)"/>
+    <text x="100" y="252" fill="#f59e0b" font="700 10px Inter" text-anchor="middle">WARN</text>
+    <text x="132" y="252" fill="#f59e0b">Potential SQL injection in src/db/queries.ts:45</text>
+
+    <text class="ts" x="0" y="280">22:14:10</text>
+    <rect x="80" y="269" width="40" height="14" rx="3" fill="rgba(99,102,241,0.15)"/>
+    <text x="100" y="280" fill="#6366f1" font="700 10px Inter" text-anchor="middle">INFO</text>
+    <text x="132" y="280" fill="#f1f5f9">Phase 3: Secrets detection...</text>
+
+    <text class="ts" x="0" y="308">22:14:11</text>
+    <rect x="80" y="297" width="40" height="14" rx="3" fill="rgba(148,163,184,0.1)"/>
+    <text x="100" y="308" fill="#94a3b8" font="700 10px Inter" text-anchor="middle">DEBUG</text>
+    <text x="132" y="308" fill="#94a3b8">Scanning for exposed API keys, tokens, and credentials...</text>
+
+    <text class="ts" x="0" y="336">22:14:12</text>
+    <rect x="80" y="325" width="40" height="14" rx="3" fill="rgba(239,68,68,0.15)"/>
+    <text x="100" y="336" fill="#ef4444" font="700 10px Inter" text-anchor="middle">ERROR</text>
+    <text x="132" y="336" fill="#ef4444">🚨 Exposed API key detected in src/config/dev.env (line 12)</text>
+
+    <rect x="132" y="358" width="8" height="13" fill="#6366f1"/>
+  </g>
+
+  <!-- Sidebar -->
+  <!-- Meta tiles -->
+  <rect class="panel" x="976" y="244" width="416" height="100" rx="12"/>
+  <text class="label" x="1000" y="276">DURATION</text>
+  <text class="text-mono-light" x="1000" y="316" style="font-size:18px">0:09</text>
+  <line x1="1124" y1="262" x2="1124" y2="326" stroke="rgba(148,163,184,0.1)"/>
+  <text class="label" x="1144" y="276">TOKENS</text>
+  <text class="text-mono-light" x="1144" y="316" style="font-size:18px">3,247</text>
+  <line x1="1268" y1="262" x2="1268" y2="326" stroke="rgba(148,163,184,0.1)"/>
+  <text class="label" x="1288" y="276">LOGS</text>
+  <text class="text-mono-light" x="1288" y="316" style="font-size:18px">14</text>
+
+  <!-- Steps -->
+  <rect class="panel" x="976" y="360" width="416" height="280" rx="12"/>
+  <text class="label" x="1000" y="392">REASONING STEPS</text>
+
+  <g transform="translate(1000,412)" font="500 13px Inter">
+    <!-- Step 1 success -->
+    <circle cx="11" cy="20" r="11" fill="#10b981"/>
+    <text x="11" y="24" fill="white" font="700 11px Inter" text-anchor="middle">✓</text>
+    <text x="34" y="24" fill="#94a3b8">Initialize</text>
+
+    <!-- Step 2 success -->
+    <circle cx="11" cy="56" r="11" fill="#10b981"/>
+    <text x="11" y="60" fill="white" font="700 11px Inter" text-anchor="middle">✓</text>
+    <text x="34" y="60" fill="#94a3b8">Dependency Scan</text>
+
+    <!-- Step 3 running -->
+    <rect x="-8" y="76" width="380" height="28" rx="6" fill="rgba(99,102,241,0.15)"/>
+    <circle cx="11" cy="92" r="11" fill="#6366f1"/>
+    <circle cx="11" cy="92" r="5" fill="none" stroke="white" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="34" y="96" fill="#f1f5f9" font="500 13px Inter">Static Analysis</text>
+
+    <!-- Step 4 pending -->
+    <circle cx="11" cy="128" r="11" fill="#1a2440" stroke="rgba(148,163,184,0.2)"/>
+    <text x="11" y="132" fill="#64748b" font="700 11px Inter" text-anchor="middle">4</text>
+    <text x="34" y="132" fill="#64748b">Secrets Detection</text>
+
+    <!-- Step 5 pending -->
+    <circle cx="11" cy="164" r="11" fill="#1a2440" stroke="rgba(148,163,184,0.2)"/>
+    <text x="11" y="168" fill="#64748b" font="700 11px Inter" text-anchor="middle">5</text>
+    <text x="34" y="168" fill="#64748b">Generate Report</text>
+  </g>
+
+  <!-- Failure banner placeholder (showing both states) -->
+  <rect x="976" y="656" width="416" height="100" rx="12" fill="rgba(239,68,68,0.08)" stroke="rgba(239,68,68,0.3)"/>
+  <text x="1000" y="688" fill="#ef4444" font="600 14px Inter">Retry available on failure</text>
+  <text x="1000" y="710" fill="#94a3b8" font="500 12px Inter">If the agent reports an error, a retry</text>
+  <text x="1000" y="728" fill="#94a3b8" font="500 12px Inter">button appears here with full context.</text>
+  <rect x="1000" y="740" width="100" height="0" rx="8" fill="#6366f1"/>
+
+  <!-- Success banner alt placeholder -->
+  <rect x="976" y="772" width="416" height="80" rx="12" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.3)"/>
+  <circle cx="1014" cy="812" r="18" fill="#10b981"/>
+  <text x="1014" y="817" fill="white" font="700 16px Inter" text-anchor="middle">✓</text>
+  <text x="1042" y="808" fill="#f1f5f9" font="600 14px Inter">Task complete (on success)</text>
+  <text x="1042" y="828" fill="#94a3b8" font="500 12px Inter">Finished in 0:09 · 3,247 tokens</text>
+
+  <text class="text-body" x="48" y="884" style="font-size:11px;font-style:italic">Wireframe 4 of 4 — Agent Execution · Streaming logs (left), reasoning steps + meta + status (right). Color-coded log levels, animated step indicator, retry on failure.</text>
+</svg>
